@@ -145,6 +145,39 @@
         <button type="submit" id="submit-btn" class="btn btn-success mt-3">Add to Cart</button>
         </form>
 
+        <!-- End of order section -->
+
+        <!-- Cart section -->
+        <div class="col py-5 px-3 mx-2" data-aos="fade-up" data-aos-dalay="2oo">
+            <div class="cart">
+                <h2 class="text-center">Your Order:</h2>
+                <ul class="list-group" id="orderItems"></ul>
+                <p class="font-weight-bold" id="orderList"></p>
+                <p class="font-weight-bold" id="deliveryCost"></p>
+            </div>
+
+            <div class="cart">
+                <h2>Your Cart:</h2>
+                <div id="cartItems"></div>
+
+                <ul class="list-group">
+                    <li class="text-warning">
+                        <div id="cartTotal"></div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Delivery Section -->
+            <div class="delivery">
+                <h2>Delivery Mode:</h2>
+                <button type="submit" id="inhouse" class="btn btn-success mt-3">Counter</button>
+                <button type="submit" id="homeDelivery" class="btn btn-success mt-3">Home</button>
+            </div>
+
+            <!-- End of Delivery Section -->
+        </div>
+        <!-- End of Cart section -->
+
 
         <!-- Optional JavaScript; choose one of the two! -->
 
