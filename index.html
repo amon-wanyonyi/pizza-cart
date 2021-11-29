@@ -1,217 +1,234 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Amorom~PizzaIn</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700i&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Lorem, ipsum.</title>
 </head>
 
 <body>
-
-    <!-- Navigation -->
-
-    <header>
-        <nav id="navbar_top" class="navbar navbar-expand-lg navbar-expand-lg navbar-light bg-dark">
-            <div class="container">
-                <a href="#" class="navbar-brand text-white">Amorom ~ PizzaIn</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="main_nav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link text-white" href="#order">Order</a></li>
-                    </ul>
-                </div>
-                <!--navbar-collapse-->
-            </div>
-            <!--container-fluid-->
-        </nav>
-    </header>
-
-    <!-- Navigation -->
-
-    <!-- Landing Page -->
-
-    <div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./assets/bg_pizza.jpg" class="d-block" height="auto" width="100%" alt="...">
-                <div class="carousel-caption d-none d-md-block mt-5 fs-2">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="./assets/image_6.jpg" class="d-block" height="auto" width="100%" alt="...">
-                <div class="carousel-caption d-none d-md-block mt-5 fs-2">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="./assets/bg_landing2.jpg" class="d-block" height="auto" width="100%" alt="...">
-                <div class="carousel-caption d-none d-md-block mt-5 fs-2">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
-    <!-- Landing Page -->
-
-    <!-- order section -->
-    <div class="text-center mt-5" id="order">
-        <form class="form" id="orderForm" action="#">
-            <div class="section-header">
-                <h2 class="header">Place your Order now!</h2>
-                <h3>Select Pizza Size:</h3>
-            </div>
-
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="pizzaSize" id="small" value="small">
-                <label class="form-check-label" for="inlineRadio1">Small</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="pizzaSize" id="medium" value="medium">
-                <label class="form-check-label" for="inlineRadio2">Medium</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="pizzaSize" id="large" value="large">
-                <label class="form-check-label" for="inlineRadio3">Large</label>
-            </div>
-
-    </div>
-    <div class="container">
-        <div class="text-center mt-5">
-            <div class="header">
-                <h3>Select your Toppings!</h3>
-            </div>
-            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-            <option selected>... select your topping ...</option>
-            <option value="tomato">Tomato</option>
-            <option value="pineapple">Pineapple</option>
-            <option value="checken">Chicken and Cheese</option>
-            <option value="peperoni">Peperoni</option>
-            <option value="checken_tikka">Chicken Tikka</option>
-          </select>
-        </div>
-
-    </div>
-
-
-    <div class="text-center mt-5">
-
-        <div class="section-header">
-            <h3>Select crust to add to your Pizza:</h3>
-        </div>
-
-        <div class="form-check form-check-inline" id="crust">
-            <input class="form-check-input" type="radio" name="pizzaCrust" id="crust" value="crispy">
-            <label class="form-check-label" for="inlineRadio1">Cheese - Stuffed Crust</label>
-        </div>
-        <div class="form-check form-check-inline" id="crust">
-            <input class="form-check-input" type="radio" name="pizzaCrust" id="medium" value="stuffed">
-            <label class="form-check-label" for="inlineRadio2">Thin Crust</label>
-        </div>
-        <div class="form-check form-check-inline" id="crust">
-            <input class="form-check-input" type="radio" name="pizzaCrust" id="large" value="sugar--free">
-            <label class="form-check-label" for="inlineRadio3">Naepolitan Crust</label>
-        </div>
-        <br>
-        <button type="submit" id="submit-btn" class="btn btn-success mt-3">Add to Cart</button>
-        </form>
-
-        <!-- End of order section -->
-
-        <!-- Cart section -->
-        <div class="col py-5 px-3 mx-2" data-aos="fade-up" data-aos-dalay="2oo">
-            <div class="cart">
-                <h2 class="text-center">Your Order:</h2>
-                <ul class="list-group" id="orderItems"></ul>
-                <p class="font-weight-bold" id="orderList"></p>
-                <p class="font-weight-bold" id="deliveryCost"></p>
-            </div>
-
-            <div class="cart">
-                <h2>Your Cart:</h2>
-                <div id="cartItems"></div>
-
-                <ul class="list-group">
-                    <li class="text-warning">
-                        <div id="cartTotal"></div>
+    <div class="main">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <h2>AMOROM<span>INN</span></h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#order">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#contact-section">Contact</a>
                     </li>
                 </ul>
             </div>
-
-            <!-- Delivery Section -->
-            <div class="container">
-                <div class="delivery">
-                    <h2>Delivery Mode:</h2>
-                    <button type="submit" id="inhouse" class="btn btn-success mt-3">Counter</button>
-                    <button type="submit" id="homeDelivery" class="btn btn-success mt-3">Home</button>
+        </nav>
+        <h1 class="welcome">
+            Welcome to the Amorom Inn for the best Pizza.
+        </h1>
+    </div>
+    <div id="works">
+        <h1 class="text-center">How it works</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mt-4 text-center">
+                    <div class="card">
+                        <div class="card-title">
+                            <h4>Choose your favourite pizza</h4>
+                        </div>
+                        <div class="card-body">
+                            <img src="./assets/search.png" width="70" alt="" />
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis eius repudiandae sapiente distinctio voluptatem dolorem a asperiores aperiam obcaecati modi!</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="py-4" id="delivery-form">
-                    <form class="form-delivery" data-aos="fade-up">
-                        <h1>Delivery Address</h1>
-
-                        <div class="form-group">
-                            <label for="House Number">House Number</label>
-                            <input type="text" placeholder="House Number" class="form-control" name="houseNumber" required>
+                <div class="col-md-4 mt-4 text-center">
+                    <div class="card">
+                        <div class="card-title">
+                            <h4>We deliver at your door</h4>
                         </div>
-                        <div class="form-group">
-                            <label for="Estate">Estate</label>
-                            <input type="text" placeholder="Enter your Estate" class="form-control" name="estate" required>
+                        <div class="card-body">
+                            <img src="./assets/delivery.svg" alt="" />
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi possimus vitae odit unde neque id, suscipit odio ipsam maxime maiores?
+                            </p>
                         </div>
-                        <div class="form-group">
-                            <label for="phoneNo">Phone Number</label>
-                            <input type="tel" placeholder="Phone number" class="form-control" name="phone" required>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4 text-center">
+                    <div class="card">
+                        <div class="card-title">
+                            <h4>Eat and enjoy</h4>
+                            <p></p>
                         </div>
-                        <hr>
-                        <button type="submit" id="print" class="btn btn-success mt-3">Print Delivery Note</button>
-                        <button type="submit" id="closeForm" class="btn btn-danger mt-3">Close</button>
-                    </form>
+                        <div class="card-body">
+                            <img src="./assets/eat-enjoy.svg" alt="" />
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates modi itaque unde rem aperiam adipisci et quas mollitia aliquid minus.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- End of Delivery Section -->
         </div>
-        <!-- End of Cart section -->
+    </div>
+    <div id="order"></div>
+    <div class="order mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="order-section"></div>
+                    <h1 class="text-center pt-4">Make an Order</h1>
+                    <div class="alert alert-success mt-2" id="success">
+                        <strong>Success!</strong> your Order will be delivered to your location in
+                        <span style="color: red; font-size:18px" id="place"></span> the delivery fee is ksh 250. Thank you for shopping with us, We aim on Customer Satisfaction.
+                    </div>
+                    <div class="alert alert-success" id="no-delivery">
+                        <strong>Success!</strong> Waiting for you to Pick Your ordered Pizza. Thank you for shopping with us.
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <card-title>
+                                    <h3 class="pt-4 pl-5">Let us know what you want</h3>
+                                </card-title>
+                                <div class="card-body">
+                                    <div id="pizza">
+                                        <img class="pl-5" src="./assets/pizza1.jpeg" alt="" />
+                                    </div>
+                                    <form id="myform">
+                                        <div class="form-group">
+                                            <label for="pizza-size">Pizza Size</label>
+                                            <select class="form-control" id="pizza-size">
+                        <option value="small">Small -- ksh 600</option>
+                        <option value="medium">Medium -- ksh 800</option>
+                        <option value="large"> Large -- ksh 1200</option>
+                      </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pizza-crust">Which crust do you want</label>
+                                            <select class="form-control" id="pizza-crust">
+                        <option value="crispy">Crispy -- ksh 300</option>
+                        <option value="stuffed">Stuffed -- ksh 200</option>
+                        <option value="gluten-free">
+                          Gluten-free -- ksh 100</option>
+                      </select>
+                                        </div>
+                                        <p>Toppings</p>
+                                        <div class="toppings">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="pepperoni" />
+                                                <label class="form-check-label" for="inlineCheckbox1">Pepperoni ksh. 100</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="veges" />
+                                                <label class="form-check-label" for="inlineCheckbox2">Veges ksh. 50</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="bacon" />
+                                                <label class="form-check-label" for="inlineCheckbox2">Bacon ksh 75</label>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn-success btn mt-3" id="orderbtn">
+                      Order now
+                    </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card mt-1">
+                                <div class="card-title d-inline-flex">
+                                    <h3 class="p-4">View items in cart</h3>
+                                    <i class="p-4 fa fa-shopping-cart total"><button class="btn-success btn ml-2" value="0" id="quantity">
+                      0
+                    </button></i>
+                                </div>
+                                <div class="card-body">
+                                    <table id="table">
+                                        <tr>
+                                            <td>Size</td>
+                                            <td>Crust</td>
+                                            <td>Toppings</td>
+                                            <td>Total Price</td>
+                                        </tr>
+                                    </table>
+
+                                    <div id="cart">
+                                        <img id="cart" src="./assets/cart.svg" alt="" />
+                                        <p class="text-center pt-4">
+                                            You do not have any item in the cart
+                                        </p>
+                                    </div>
+
+                                    <div id="items"></div>
+                                    <a href="#order-section">
+                                        <div class="checkout">
+                                            <button class="btn-success btn m-4" data-toggle="modal" data-target="#exampleModalCenter" id="gettotal">
+                        Checkout
+                      </button>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLongTitle">
+                        Confirm the price
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Total cost for your order is Ksh
+                        <span id="money" style="color: red"></span>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="myModel" data-dismiss="modal">
+            Confirm checkout
+          </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact-section"></div>
+    <footer>
+        <div>
+            <h1 class="text-muted" id="footer-text">CONTACT SECTION</h1>
+        </div>
+    </footer>
 
 
-        <!-- Optional JavaScript; choose one of the two! -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
-        <!-- Option 1: Bootstrap Bundle with Popper -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-        <script src="./js/script.js"></script>
-        <script>
-            AOS.init();
-        </script>
-
-
-        <script src="./js/style.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
